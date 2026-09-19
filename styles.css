@@ -270,7 +270,36 @@ h1 {
   color: var(--text-muted);
   border-top: 1px solid var(--border);
   font-size: 0.9rem;
-  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.btn-clear-completed {
+  padding: 7px 9px;
+  color: var(--danger);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-clear-completed:hover:not(:disabled),
+.btn-clear-completed:focus-visible:not(:disabled) {
+  background: var(--danger-soft);
+  border-color: var(--border);
+}
+
+.btn-clear-completed:disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 .sr-only {
