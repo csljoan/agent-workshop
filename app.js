@@ -91,7 +91,7 @@ function render() {
   } else if (currentFilter === 'active') {
     emptyState.textContent = '目前沒有未完成的待辦事項。';
   } else if (currentFilter === 'completed') {
-    emptyState.textContent = '目前沒有已完成的待辦事項。';
+    emptyState.textContent = '目前沒有已完成的待辦事項，項目只是被篩選掉了，並沒有被刪除。';
   }
 
   const remaining = todos.filter((todo) => !todo.completed).length;
